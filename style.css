@@ -529,8 +529,8 @@
 }
 
 #upcoming_projects {
-    background-color: #080808;
-    background-image: linear-gradient(to bottom, #080808 20%, #161616 100%);
+    background-color: #101010;
+    background-image: linear-gradient(to bottom, #101010 20%, #161616 100%);
 }
 
 @media screen and (max-width: 1300px) {
