@@ -201,7 +201,7 @@
 .main_heading {
     font-size: 100px;
     margin-bottom: 24px;
-    color: #efefef;
+    color: #fff;
 }
 
 .main_heading span {
@@ -505,7 +505,7 @@
 .project_button {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .projects_card button {
