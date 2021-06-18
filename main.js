@@ -33,13 +33,16 @@ const highlightMenu = () => {
     } else if (window.innerWidth > 960 && scrollPos < 2345) {
         projectsMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
+        upcomingMenu.classList.remove('highlight')
         return
     } else if (window.innerWidth > 960 && scrollPos < 3000) {
         upcomingMenu.classList.add('highlight')
         projectsMenu.classList.remove('highlight')
+        return
     }
     if((elem && window.innerWidth < 960 && scrollPos < 600 || elem)) {
         elem.classList.remove('highlight')
+        return
     }
 }
 
