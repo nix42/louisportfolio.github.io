@@ -20,7 +20,7 @@ const highlightMenu = () => {
     const upcomingMenu = document.querySelector('#upcoming')
     
     let scrollPos = window.scrollY
-    console.log(scrollPos)
+
     // adds highlight class to my menu items
     if(window.innerWidth > 960 && scrollPos < 600) {
         homeMenu.classList.add('highlight')
