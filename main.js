@@ -16,7 +16,9 @@ const highlightMenu = () => {
     const elem = document.querySelector('.highlight')
     const homeMenu = document.querySelector('#home')
     const aboutMenu = document.querySelector('#about')
-    const servicesMenu = document.querySelector('#projects')
+    const projectsMenu = document.querySelector('#projects')
+    const upcomingMenu = document.querySelector('#upcoming')
+    
     let scrollPos = window.scrollY
     // adds highlight class to my menu items
     if(window.innerWidth > 960 && scrollPos < 600) {
@@ -26,14 +28,16 @@ const highlightMenu = () => {
     } else if (window.innerWidth > 960 && scrollPos < 1400) {
         aboutMenu.classList.add('highlight')
         homeMenu.classList.remove('highlight')
-        servicesMenu.classList.remove('highlight')
+        projectsMenu.classList.remove('highlight')
         return
     } else if (window.innerWidth > 960 && scrollPos < 2345) {
-        servicesMenu.classList.add('highlight')
+        projectsMenu.classList.add('highlight')
         aboutMenu.classList.remove('highlight')
         return
+    } else if (window.innerWidth > 960 && scrollPos < 3000) {
+        upcomingMenu.classList.add('highlight')
+        projectsMenu.classList.remove('highlight')
     }
-
     if((elem && window.innerWidth < 960 && scrollPos < 600 || elem)) {
         elem.classList.remove('highlight')
     }
